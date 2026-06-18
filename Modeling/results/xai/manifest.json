@@ -1,0 +1,153 @@
+{
+  "data_path": "C:\\Users\\albar\\Albaraa Data Disk\\Documents\\University\\University Of Wollongong In Dubai\\Year 2\\Spring\\CSCI323\\Project\\CSCI323 Project\\Dubai-Real-Estate-ChatBot\\Data\\Clean Data\\test.csv",
+  "background_path": "C:\\Users\\albar\\Albaraa Data Disk\\Documents\\University\\University Of Wollongong In Dubai\\Year 2\\Spring\\CSCI323\\Project\\CSCI323 Project\\Dubai-Real-Estate-ChatBot\\Data\\Clean Data\\train.csv",
+  "model_dir": "C:\\Users\\albar\\Albaraa Data Disk\\Documents\\University\\University Of Wollongong In Dubai\\Year 2\\Spring\\CSCI323\\Project\\CSCI323 Project\\Dubai-Real-Estate-ChatBot\\Modeling\\models",
+  "output_dir": "C:\\Users\\albar\\Albaraa Data Disk\\Documents\\University\\University Of Wollongong In Dubai\\Year 2\\Spring\\CSCI323\\Project\\CSCI323 Project\\Dubai-Real-Estate-ChatBot\\Modeling\\results\\xai",
+  "row_count": 500,
+  "feature_count": 30,
+  "selection": "head",
+  "sample_size": 500,
+  "background_size": 100,
+  "base_value": 1984339.7348785633,
+  "base_model_expected_values": {
+    "xgb": 1791333.7359962624,
+    "lgbm": 1798821.8104646504,
+    "rf": 2354189.3201737907
+  },
+  "meta_weights": {
+    "xgb": 0.2065360020043907,
+    "lgbm": 0.5112370367665817,
+    "rf": 0.3096706213473941
+  },
+  "shap_modes": {
+    "xgb": "tree_interventional",
+    "lgbm": "tree_interventional",
+    "rf": "tree_path_dependent_approximate"
+  },
+  "reconstruction_max_abs_error": 2.397960226982832,
+  "reconstruction_mean_abs_error": 0.22365367205254733,
+  "top_features": [
+    {
+      "rank": 1,
+      "feature": "procedure_area",
+      "mean_abs_shap": 1113836.1367686687,
+      "mean_shap": -31683.026139578542
+    },
+    {
+      "rank": 2,
+      "feature": "project",
+      "mean_abs_shap": 299779.81903159816,
+      "mean_shap": 24043.037401375004
+    },
+    {
+      "rank": 3,
+      "feature": "community_30d_avg_price",
+      "mean_abs_shap": 295695.94947387534,
+      "mean_shap": 160364.67684469008
+    },
+    {
+      "rank": 4,
+      "feature": "rooms",
+      "mean_abs_shap": 86793.33495198027,
+      "mean_shap": -3952.970019139087
+    },
+    {
+      "rank": 5,
+      "feature": "master_project",
+      "mean_abs_shap": 81496.43142076375,
+      "mean_shap": 24971.36919597186
+    },
+    {
+      "rank": 6,
+      "feature": "prop_type_Unit",
+      "mean_abs_shap": 52242.16428511871,
+      "mean_shap": 2596.496852125018
+    },
+    {
+      "rank": 7,
+      "feature": "prop_sb_type",
+      "mean_abs_shap": 52080.29023775509,
+      "mean_shap": 18211.988946402325
+    },
+    {
+      "rank": 8,
+      "feature": "off_plan_vol_ratio",
+      "mean_abs_shap": 48863.71859155316,
+      "mean_shap": -20235.777394058892
+    },
+    {
+      "rank": 9,
+      "feature": "procedure_Sell",
+      "mean_abs_shap": 42363.037262014346,
+      "mean_shap": 4032.4970357039506
+    },
+    {
+      "rank": 10,
+      "feature": "area",
+      "mean_abs_shap": 34561.30452825027,
+      "mean_shap": 19538.430535163872
+    },
+    {
+      "rank": 11,
+      "feature": "nearest_landmark",
+      "mean_abs_shap": 22165.525353343626,
+      "mean_shap": 9884.69715001923
+    },
+    {
+      "rank": 12,
+      "feature": "usage_Commercial",
+      "mean_abs_shap": 21510.20037609323,
+      "mean_shap": 10081.381743546224
+    },
+    {
+      "rank": 13,
+      "feature": "nearest_metro",
+      "mean_abs_shap": 18528.299685548925,
+      "mean_shap": 7913.700149715122
+    },
+    {
+      "rank": 14,
+      "feature": "is_offplan",
+      "mean_abs_shap": 18468.921485449417,
+      "mean_shap": -511.66004582623754
+    },
+    {
+      "rank": 15,
+      "feature": "procedure_Sell___Pre_registration",
+      "mean_abs_shap": 15524.600159376841,
+      "mean_shap": 1720.8982435314147
+    }
+  ],
+  "artifacts": {
+    "shap_values_npy": "C:\\Users\\albar\\Albaraa Data Disk\\Documents\\University\\University Of Wollongong In Dubai\\Year 2\\Spring\\CSCI323\\Project\\CSCI323 Project\\Dubai-Real-Estate-ChatBot\\Modeling\\results\\xai\\shap_values.npy",
+    "shap_values_csv": "C:\\Users\\albar\\Albaraa Data Disk\\Documents\\University\\University Of Wollongong In Dubai\\Year 2\\Spring\\CSCI323\\Project\\CSCI323 Project\\Dubai-Real-Estate-ChatBot\\Modeling\\results\\xai\\shap_values.csv",
+    "base_values_npy": "C:\\Users\\albar\\Albaraa Data Disk\\Documents\\University\\University Of Wollongong In Dubai\\Year 2\\Spring\\CSCI323\\Project\\CSCI323 Project\\Dubai-Real-Estate-ChatBot\\Modeling\\results\\xai\\base_values.npy",
+    "base_model_predictions_npy": "C:\\Users\\albar\\Albaraa Data Disk\\Documents\\University\\University Of Wollongong In Dubai\\Year 2\\Spring\\CSCI323\\Project\\CSCI323 Project\\Dubai-Real-Estate-ChatBot\\Modeling\\results\\xai\\base_model_predictions.npy",
+    "feature_importance_csv": "C:\\Users\\albar\\Albaraa Data Disk\\Documents\\University\\University Of Wollongong In Dubai\\Year 2\\Spring\\CSCI323\\Project\\CSCI323 Project\\Dubai-Real-Estate-ChatBot\\Modeling\\results\\xai\\feature_importance.csv",
+    "waterfall_arrays_json": "C:\\Users\\albar\\Albaraa Data Disk\\Documents\\University\\University Of Wollongong In Dubai\\Year 2\\Spring\\CSCI323\\Project\\CSCI323 Project\\Dubai-Real-Estate-ChatBot\\Modeling\\results\\xai\\waterfall_arrays.json",
+    "waterfall_arrays_csv": "C:\\Users\\albar\\Albaraa Data Disk\\Documents\\University\\University Of Wollongong In Dubai\\Year 2\\Spring\\CSCI323\\Project\\CSCI323 Project\\Dubai-Real-Estate-ChatBot\\Modeling\\results\\xai\\waterfall_arrays.csv",
+    "explained_rows_csv": "C:\\Users\\albar\\Albaraa Data Disk\\Documents\\University\\University Of Wollongong In Dubai\\Year 2\\Spring\\CSCI323\\Project\\CSCI323 Project\\Dubai-Real-Estate-ChatBot\\Modeling\\results\\xai\\explained_rows.csv",
+    "plots": [
+      "C:\\Users\\albar\\Albaraa Data Disk\\Documents\\University\\University Of Wollongong In Dubai\\Year 2\\Spring\\CSCI323\\Project\\CSCI323 Project\\Dubai-Real-Estate-ChatBot\\Modeling\\results\\xai\\summary_bar.png",
+      "C:\\Users\\albar\\Albaraa Data Disk\\Documents\\University\\University Of Wollongong In Dubai\\Year 2\\Spring\\CSCI323\\Project\\CSCI323 Project\\Dubai-Real-Estate-ChatBot\\Modeling\\results\\xai\\summary_beeswarm.png",
+      "C:\\Users\\albar\\Albaraa Data Disk\\Documents\\University\\University Of Wollongong In Dubai\\Year 2\\Spring\\CSCI323\\Project\\CSCI323 Project\\Dubai-Real-Estate-ChatBot\\Modeling\\results\\xai\\waterfall_assets\\waterfall_0000_0.png",
+      "C:\\Users\\albar\\Albaraa Data Disk\\Documents\\University\\University Of Wollongong In Dubai\\Year 2\\Spring\\CSCI323\\Project\\CSCI323 Project\\Dubai-Real-Estate-ChatBot\\Modeling\\results\\xai\\waterfall_assets\\waterfall_0001_1.png",
+      "C:\\Users\\albar\\Albaraa Data Disk\\Documents\\University\\University Of Wollongong In Dubai\\Year 2\\Spring\\CSCI323\\Project\\CSCI323 Project\\Dubai-Real-Estate-ChatBot\\Modeling\\results\\xai\\waterfall_assets\\waterfall_0002_2.png",
+      "C:\\Users\\albar\\Albaraa Data Disk\\Documents\\University\\University Of Wollongong In Dubai\\Year 2\\Spring\\CSCI323\\Project\\CSCI323 Project\\Dubai-Real-Estate-ChatBot\\Modeling\\results\\xai\\waterfall_assets\\waterfall_0003_3.png",
+      "C:\\Users\\albar\\Albaraa Data Disk\\Documents\\University\\University Of Wollongong In Dubai\\Year 2\\Spring\\CSCI323\\Project\\CSCI323 Project\\Dubai-Real-Estate-ChatBot\\Modeling\\results\\xai\\waterfall_assets\\waterfall_0004_4.png",
+      "C:\\Users\\albar\\Albaraa Data Disk\\Documents\\University\\University Of Wollongong In Dubai\\Year 2\\Spring\\CSCI323\\Project\\CSCI323 Project\\Dubai-Real-Estate-ChatBot\\Modeling\\results\\xai\\waterfall_assets\\waterfall_0005_5.png",
+      "C:\\Users\\albar\\Albaraa Data Disk\\Documents\\University\\University Of Wollongong In Dubai\\Year 2\\Spring\\CSCI323\\Project\\CSCI323 Project\\Dubai-Real-Estate-ChatBot\\Modeling\\results\\xai\\waterfall_assets\\waterfall_0006_6.png",
+      "C:\\Users\\albar\\Albaraa Data Disk\\Documents\\University\\University Of Wollongong In Dubai\\Year 2\\Spring\\CSCI323\\Project\\CSCI323 Project\\Dubai-Real-Estate-ChatBot\\Modeling\\results\\xai\\waterfall_assets\\waterfall_0007_7.png",
+      "C:\\Users\\albar\\Albaraa Data Disk\\Documents\\University\\University Of Wollongong In Dubai\\Year 2\\Spring\\CSCI323\\Project\\CSCI323 Project\\Dubai-Real-Estate-ChatBot\\Modeling\\results\\xai\\waterfall_assets\\waterfall_0008_8.png",
+      "C:\\Users\\albar\\Albaraa Data Disk\\Documents\\University\\University Of Wollongong In Dubai\\Year 2\\Spring\\CSCI323\\Project\\CSCI323 Project\\Dubai-Real-Estate-ChatBot\\Modeling\\results\\xai\\waterfall_assets\\waterfall_0009_9.png"
+    ]
+  },
+  "source_artifacts": {
+    "xgb": "C:\\Users\\albar\\Albaraa Data Disk\\Documents\\University\\University Of Wollongong In Dubai\\Year 2\\Spring\\CSCI323\\Project\\CSCI323 Project\\Dubai-Real-Estate-ChatBot\\Modeling\\models\\xgb.pkl",
+    "lgbm": "C:\\Users\\albar\\Albaraa Data Disk\\Documents\\University\\University Of Wollongong In Dubai\\Year 2\\Spring\\CSCI323\\Project\\CSCI323 Project\\Dubai-Real-Estate-ChatBot\\Modeling\\models\\lgbm.pkl",
+    "rf": "C:\\Users\\albar\\Albaraa Data Disk\\Documents\\University\\University Of Wollongong In Dubai\\Year 2\\Spring\\CSCI323\\Project\\CSCI323 Project\\Dubai-Real-Estate-ChatBot\\Modeling\\models\\rf.pkl",
+    "ridge": "C:\\Users\\albar\\Albaraa Data Disk\\Documents\\University\\University Of Wollongong In Dubai\\Year 2\\Spring\\CSCI323\\Project\\CSCI323 Project\\Dubai-Real-Estate-ChatBot\\Modeling\\models\\ridge.pkl",
+    "scaler": "C:\\Users\\albar\\Albaraa Data Disk\\Documents\\University\\University Of Wollongong In Dubai\\Year 2\\Spring\\CSCI323\\Project\\CSCI323 Project\\Dubai-Real-Estate-ChatBot\\Modeling\\models\\meta_scaler.pkl",
+    "features": "C:\\Users\\albar\\Albaraa Data Disk\\Documents\\University\\University Of Wollongong In Dubai\\Year 2\\Spring\\CSCI323\\Project\\CSCI323 Project\\Dubai-Real-Estate-ChatBot\\Modeling\\models\\feature_columns.json"
+  }
+}
